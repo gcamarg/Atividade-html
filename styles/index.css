@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+.header {
+    height: 60px;
+    text-align: center;
+    background-color: #0d6efd;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    vertical-align: middle;
+}
+.header h1{
+    padding: 10px;
+}
+.navbar {
+    background-color: #080B4E;
+    height: fit-content;
+    padding: 3px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list {
+    width: fit-content;
+    height: 30px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2px;
+    
+}
+ul {
+    list-style-type: none;
+}
+.nav-item {
+    width: 150px;
+    text-align: center;
+    height: 100%;
+}
+
+.nav-item a {
+    display: block;
+    text-decoration: none;
+    font-size: large;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+.dropdown-menu {
+    display: none;
+    padding: 0;
+    width: 150px;
+    background-color: lightgray;
+    flex-direction: column;
+    text-align: center;
+}
+.dropdown-menu li{
+    padding: 5px 4px;
+}
+.dropdown-menu li a{
+    color: #080B4E;
+}
+.display {
+    display: flex;
+    position: absolute;
+}
+
+.nav-item:hover {
+    background-color: #3139a5;
+}
+.dropdown-menu li:hover{
+    background-color: #eeeeee;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.search-area {
+    width: fit-content;
+    height: 30px
+}
+.search-bar {
+    width: 500px;
+    height: 100%;
+    padding: 2px 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.search-area button {
+    width: fit-content;
+    border-radius: 5px;
+    height: 90%;
+    color: white;
+    font-weight: 600;
+    background-image: linear-gradient(0deg, rgb(17, 128, 37) 0%, rgb(41, 161, 61) 50%, rgb(12, 59, 21) 100%)
+}
+.search-area button:hover { 
+    cursor: pointer;
+    background-image: linear-gradient(0deg, rgb(10, 92, 25) 0%, rgb(26, 116, 41) 50%, rgb(9, 43, 15) 100%)
+}
